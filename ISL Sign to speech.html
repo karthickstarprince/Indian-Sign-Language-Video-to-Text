@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISL to Text & Speech Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        video {
+            width: 60%;
+            border: 2px solid #333;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indian Sign Language to Text & Speech Converter</h1>
+    </header>
+    <main>
+        <p>Use AI and ML to translate Indian Sign Language into text and speech.</p>
+        <video id="video" autoplay></video>
+        <br>
+        <button onclick="startRecognition()">Start Recognition</button>
+        <p id="output">Recognized text will appear here...</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 ISL Converter</p>
+    </footer>
+    <script>
+        function startRecognition() {
+            document.getElementById("output").innerText = "Processing... AI/ML model running...";
+            // Placeholder for AI/ML model integration
+        }
+    </script>
+</body>
+</html>
